@@ -1,0 +1,192 @@
+<!--Name: Richard Stanley
+ID #: 2307584
+Assignment #: IA2 -E-Commerce Website Development
+Day/Time of Class: Wed 6pm - 8pm
+Module Name: Web Programming
+Module Code: CIT2011-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameStan</title>
+<!--Links-->
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<header class="header">
+  <div class="header_1">
+    <a href="#" class="logo"><i class="material-icons">gamepad</i>GameStan</a>
+
+    <form action="" class="search_form">
+      <input type="search" placeholder="search here...." id="search_box">
+      <label for="search_box" class="material-icons">search</label>
+    </form>
+
+    <div class="icons">
+      <i class="material-icons">favorite</i>
+      <i class="material-icons" id="cart_btn">shopping_cart</i>
+      <i class="material-icons" id="login_btn">login</i>
+    </div>
+  </div>
+
+  <div class="header_2">
+    <nav class="nav_bar">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#product">Game</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Login Form -->
+<div class="login_form_container" id="login_form">
+  <div id="login_close_btn" class="material-icons">close</div>
+
+  <form>
+    <h3>Sign In</h3>
+    <span>Username</span>
+    <input type="email" placeholder="Enter your email">
+    <span>Password</span>
+    <input type="password" placeholder="Enter your password">
+    <div class="checkbox">
+      <input type="checkbox" id="remember-me">
+      <label for="remember-me">Remember me</label>
+    </div>
+    <input type="submit" value="Sign In" class="btn">
+    <p>Forgot password? <a href="#">Click Here</a></p>
+    <p>Don't have an account? <a href="#" id="register_link">Register Here</a></p>
+  </form>
+</div>
+
+<!-- Registeration Form -->
+<div class="register_form_container" id="register_form">
+  <div id="register_form_close" class="material-icons">close</div>
+
+  <form>
+    <h3>Create Your Account</h3>
+    <span>First Name</span>
+    <input type="text" placeholder="Enter your first name">
+    <span>Last Name</span>
+    <input type="text" placeholder="Enter your last name">
+    <span>Username</span>
+    <input type="email" placeholder="Enter your email">
+    <span>Password</span>
+    <input type="password" placeholder="Enter your password">
+    <span>Date of Birth</span>
+    <input type="date" placeholder="DOB">
+    <input type="submit" value="Register" class="btn">
+    <p>Already have an account? <a href="#" id="login_link">Login here Here</a></p>
+  </form>
+</div>
+
+
+<!--  Home Sections -->
+<section id="home" class="home"> 
+  <div class="row">
+    <div class="content">
+      <h3>Get Now!</h3>
+      <p>Explore and buy your favorite games at unbeatable prices.</p>
+      <a href="#product" class="btn">Shop Now</a>
+    </div>
+
+        <div class="feature">
+            <div class="wraper">
+            <a href="#"><img src="Assets/battle1.jpg" alt="Image Not Loading.Refresh"></a>
+            <a href="#"><img src="Assets/bloodborne.jpg"  alt="Image Not Loading.Refresh"></a>
+            <a href="#"><img src="Assets/cod.jpg" alt="Image Not Loading.Refresh"></a>
+            <a href="#"><img src="Assets/elden.jpg" alt="Image Not Loading.Refresh"></a>
+            </div>
+            
+        </div>
+   </div>
+
+</section>
+
+
+</section>
+<!-- Product Section -->
+<section id="product">
+  <h2>Available Games</h2>
+  <div class="products-container" id="productsContainer"></div>
+</section>
+
+<!-- Cart Sidebar -->
+<div id="cart" class="cart">
+  <span id="cart_close_btn">X</span>
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <p>Total: $<span id="cartTotal">0.00</span></p>
+  <button id="checkoutBtn" >Checkout</button>
+</div>
+
+<!--Checkout Pgae-->
+<div class="Checkout_page" id="Checkout_page">
+  <div class="Checkout_page_container">
+    <span id="checkout_close_btn">&times;</span>
+    <h2>Checkout</h2>
+
+    <div id="checkoutSummary" style="margin-bottom:1rem;">
+      <p id="checkoutItems">Total Items: 0</p>
+      <p id="checkoutTotal">Total Price: $0.00</p>
+    </div>
+
+    <input type="text" id="fullName" placeholder="Enter your full name" />
+    <input type="text" id="address" placeholder="Enter your shipping address" />
+    <input type="number" id="amountPaid" placeholder="Amount being paid" />
+
+    <button id="confirmCheckout">Confirm</button>
+    <button id="cancelCheckout" style="background:#ccc;color:#333;">Cancel</button>
+    <button id="clearCart" style="background:red;color:white;">Clear All</button>
+  </div>
+</div>
+<!--About Section-->
+  <section id="about" class="about">
+  <div class="about_container">
+    <h2>About Us</h2>
+    <p>At <strong>GameStan</strong>, we are passionate about bringing the best gaming experiences to players everywhere.  
+      Our mission is to provide a curated selection of top-quality games at unbeatable prices, along with exceptional customer service.  
+      Whether you're a casual gamer or a hardcore enthusiast, we have something for everyone.  
+    </p> <br>
+    <p>Leading the charge is Richard Stanley, our CEO. Richard(ID#2307584), a student at the University of Technology, created this website due to his interest in gaming for his IA2 project in Web Programming (CIT2011).
+    <br><br>
+    <b>For personal queries, click the button below to email us at 2307584@utech.edu.jm</b>
+    </p>
+    
+    <div class="about_feature">
+      <div class="feature">
+        <h3>Wide Variety</h3>
+        <p>From indie hits to AAA titles, we offer a broad range of games for all platforms.</p>
+      </div>
+      <div  class="feature">
+        <h3>Instant Delivery</h3>
+        <p>Purchase and download your favorite games instantly, with no delays.</p>
+      </div>
+      <div class="contact_us" ><a href="mailto:2307584@utech.edu.jm"> 
+        <h3>Contact Us</h3>
+        <p>Our friendly support team is always here to help with any issues or questions.</p>
+        </a>
+      </div>
+    </div>
+  
+    <i>Join our gaming community and level up your experience with GameStan!</i>
+  </div>
+</section>
+
+<footer>
+<a href="https://github.com/RichardStanleyITNetwork/Web-Developement" alt="GitHub Repo" target="_blank" title="My GitHub">
+  <i class="fab fa-github" style="font-size:40px; color:blueviolet;"></i>
+</a>
+<address>Made by Stanley © 2025</address>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
